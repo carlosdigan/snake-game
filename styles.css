@@ -1,0 +1,89 @@
+* {
+    font-size: 36px;
+    font-family: 'Courier', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+.container, #difficulties {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+    flex-direction: column;
+}
+
+#myCanvas {
+    border: 10px solid white;
+}
+
+#scores {
+    display: flex;
+    flex-direction: column;
+}
+
+#difficulties {
+    justify-content: space-evenly;
+}
+
+.difficulty {
+    text-align: center;
+    height: 10vh;
+    width: 15vw;
+    line-height: 10vh;
+}
+
+.easy {
+    background: lightgreen;
+    cursor: pointer;
+}
+
+.medium {
+    background: orange;
+    cursor: pointer;
+}
+
+.hard {
+    background: red;
+    cursor: pointer;
+}
+
+#info {
+    display: flex;
+    justify-content: space-between;
+    width: 75vw;
+    align-items: center;
+}
+
+#canvas-wrap { 
+    display: flex;
+    position: relative;
+    justify-content: center; 
+    align-items: center;
+} 
+#overlay  { 
+    display: flex;
+    position:absolute; 
+    border: 10px solid white;
+    width: 600px;
+    height: 300px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+
+
+#play-again {
+    cursor: pointer;
+    background: black;
+    height: 100px;
+    width: 300px;
+    border: 2.5px solid white;
+}
